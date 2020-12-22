@@ -1,6 +1,6 @@
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open('progressive-cache-v1')
+    caches.open('budget-cache-v1')
       .then(cache => {
         console.log('Opened cache')
         return cache.addAll([
